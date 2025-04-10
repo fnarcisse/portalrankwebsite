@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal Rank | Growth Engine for Local Businesses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">Portal Rank</div>
+    <div class="nav-cta">
+      <a href="#" class="btn primary small">Book a Demo</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Power Up Your <span class="rotate-text">Local Business</span> with <span class="accent">Portal Rank</span></h1>
+      <p class="subtext">Your growth engine for lead generation, automation, and influencer marketing.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn primary">Get Started</a>
+        <a href="#" class="btn outline">Live Demo</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://via.placeholder.com/500x300.png?text=Dashboard+Mockup" alt="Dashboard mockup" />
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Why Portal Rank?</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>SEO Automation</h3>
+        <p>Climb local search results and dominate your market.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Smart CRM</h3>
+        <p>Organize leads, track follow-ups, and close faster.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Influencer Campaigns</h3>
+        <p>Connect with real voices to grow brand trust and reach.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-section">
+    <h2>See Portal Rank in Action</h2>
+    <img src="https://via.placeholder.com/800x400.png?text=Live+CRM+Preview" alt="Live demo" />
+    <a href="#" class="btn primary">Launch Interactive Demo</a>
+  </section>
+
+  <section class="pricing">
+    <h2>Simple Pricing, Scalable Value</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Starter</h3>
+        <p class="price">$29/month</p>
+        <ul>
+          <li>1 user seat</li>
+          <li>Lead form integration</li>
+          <li>Basic automations</li>
+        </ul>
+      </div>
+      <div class="pricing-card popular">
+        <h3>Growth</h3>
+        <p class="price">$59/month</p>
+        <ul>
+          <li>5 user seats</li>
+          <li>Advanced CRM tools</li>
+          <li>Email + SMS automations</li>
+        </ul>
+      </div>
+      <div class="pricing-card">
+        <h3>Elite</h3>
+        <p class="price">$99/month</p>
+        <ul>
+          <li>Unlimited seats</li>
+          <li>Influencer tools</li>
+          <li>Dedicated support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="trusted">
+    <h2>Trusted by Dozens of Local Brands</h2>
+    <div class="logo-carousel">
+      <span>Urban Cuts</span>
+      <span>Glow Spa</span>
+      <span>Hartford Dental</span>
+      <span>Vitality Yoga</span>
+      <span>ProFix HVAC</span>
+    </div>
+  </section>
+
+  <script>
+    const words = ["Local Business", "E-commerce Brand", "Influencer"];
+    let i = 0;
+    const el = document.querySelector('.rotate-text');
+    setInterval(() => {
+      i = (i + 1) % words.length;
+      el.textContent = words[i];
+    }, 2500);
+  </script>
+</body>
+</html>
