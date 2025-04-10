@@ -16,7 +16,9 @@
 
   <section class="hero">
     <div class="hero-left">
-      <h1>Power Up Your <span class="rotate-text">Local Business</span> with <span class="accent">Portal Rank</span></h1>
+      <h1 class="hero-headline">
+  Power Up Your <span id="animated-word" class="animated-word">Local Business</span> with <span class="accent">Portal Rank</span>
+</h1>
       <p class="subtext">Your growth engine for lead generation, automation, and influencer marketing.</p>
       <div class="cta-buttons">
         <a href="#" class="btn primary">Get Started</a>
@@ -97,13 +99,23 @@
   </section>
 
   <script>
-    const words = ["Local Business", "E-commerce Brand", "Influencer"];
-    let i = 0;
-    const el = document.querySelector('.rotate-text');
-    setInterval(() => {
-      i = (i + 1) % words.length;
-      el.textContent = words[i];
-    }, 2500);
-  </script>
+  const words = [
+    { text: "Local Business", color: "#ff6a00" },
+    { text: "E-commerce Brand", color: "#9b5de5" },
+    { text: "Influencer", color: "#00f5d4" }
+  ];
+  let i = 0;
+  const el = document.getElementById("animated-word");
+
+  setInterval(() => {
+    i = (i + 1) % words.length;
+    el.textContent = words[i].text;
+    el.style.color = words[i].color;
+    el.style.opacity = 0;
+    setTimeout(() => {
+      el.style.opacity = 1;
+    }, 200);
+  }, 2500);
+</script>
 </body>
 </html>
